@@ -30,8 +30,12 @@ page_selection = st.sidebar.radio(
     ("정렬 알고리즘", "탐색 알고리즘") 
 )
 
-st.title("자료구조 교육 시뮬레이터 🧑‍💻")
+st.title("자료구조 교육 시뮬레이터 🧑‍�")
 st.write("다양한 자료구조 알고리즘의 동작을 시뮬레이션을 통해 직접 확인하고 배워보세요!")
+
+# 디버깅 정보 추가: 현재 작업 디렉토리 및 파일 목록 확인
+st.info(f"현재 Streamlit 앱이 실행되는 경로: `{os.getcwd()}`")
+st.info(f"현재 디렉토리의 파일 목록: `{os.listdir()}`")
 
 
 if page_selection == "정렬 알고리즘":
@@ -48,3 +52,4 @@ elif page_selection == "탐색 알고리즘":
 st.markdown("---")
 st.write("질문이 있으시면 언제든지 문의해주세요!")
 
+�
